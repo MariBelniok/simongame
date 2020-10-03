@@ -6,7 +6,7 @@ body {
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin:  5%;
   color: #FEF2BF;
 }
@@ -28,6 +28,7 @@ body {
   width: 200px;
   border: 10px solid black;
   text-align: center;
+  cursor: pointer;
   
 }
 .btn.green {
@@ -56,24 +57,32 @@ body {
   border-radius: 100%;
   color: white;
   font-family: 'Ultra', serif;
-  font-size: 52px; 
+  font-size: 46px; 
   text-align:center;
   z-index: 100;
 }
 .middle p{
-  margin: 50px auto 0;
+  margin: 50px auto 6px;
 }
-.start-btn{
-  height: 30px;
-  width: 60px;
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 20%;
+.start-btn {
   color: white;
-  font-weight: bold;
+  background-color: black;
+  outline: 0;
+  padding: 12px 24px;
+  border: 2px solid white;
+  border-radius: 8px;
+  cursor: pointer;
   font-size: 12px;
-  box-shadow: 0 0 1px 1px;
 }
+
+.start-btn:active {
+  transform: scale(0.95);
+}
+
+.start-btn:focus {
+  box-shadow: 0px 0px 10px rgb(171, 223, 230);
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
